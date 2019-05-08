@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core';
 import ACTIONS from "../modules/action";
 import { Provider as ReduxProvider } from "react-redux";
 import configureStore from "../modules/store";
-import DeleteIcon from '@material-ui/icons/Delete';
+import DeleteIcon from '@material-ui/icons/Clear';
 
 const reduxStore = configureStore(window.REDUX_INITIAL_DATA);
 
