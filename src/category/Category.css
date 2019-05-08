@@ -90,6 +90,7 @@
   padding: 16px 32px;
   opacity:1;
   cursor:pointer;
+  margin-bottom: 5px;
 }
 
  .productBox:hover *:not(.hoverBox) {
