@@ -17,7 +17,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        item: this.props.location.state? this.props.location.state.selectedProduct:'',
+        item: this.props.location? this.props.location.state.selectedProduct:'',
         quantity: 0
     };
 }
@@ -25,22 +25,24 @@ class App extends Component {
   render() {
     return (
       <ReduxProvider store={reduxStore}>
+      <Router>
       <div className="App">
-      <Router onUpdate={() => window.scrollTo(0, 0)}>
         <div>
-            <header className="App-header">
-              <Header></Header>
-            </header>
+          <header className="App-header">
+            <Header></Header>
             
-            <Route exact path="/" render={(props) => <Category {...props}/>}/>
-            <Route path="/cart" render={(props) => <Cart {...props}/>}/>
-            <Route path="/product" render={(props) => <Product {...props}/>}/>
+          </header>
+          
+          <Route exact path="/" render={(props) => <Category {...props}/>}/>
+          <Route path="/cart" render={(props) => <Cart {...props}/>}/>
+          <Route path="/product" render={(props) => <Product {...props}/>}/>
           </div>
-        </Router>
+        
       </div>
+      </Router>
       </ReduxProvider>
     );
   }
 }
 
-export default withRouter(App);
+export default App;

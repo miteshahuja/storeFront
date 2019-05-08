@@ -8,9 +8,9 @@
 }
 
 .shoppingList ul li{
-  width: 80%;
+  width: 70%;
   margin:0 auto;
-  height: 200px;
+  height: 125px;
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -19,6 +19,18 @@
     height: auto;
     float: left;
     margin: 5px;
+}
+
+.shoppingList .cartWrap {
+  width: 60%;
+    float: left;
+    height: 100%;
+    margin: 38px 0px;
+}
+
+.shoppingList .cartWrap div {
+  width:20%;
+  float:left
 }
 
 .icons {

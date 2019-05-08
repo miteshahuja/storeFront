@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import {withRouter} from 'react-router-dom';
 import axios from "axios";
 import './Category.css';
 
@@ -102,4 +104,4 @@ class Category extends Component {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Category);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Category));

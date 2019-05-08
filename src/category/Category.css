@@ -38,6 +38,10 @@
     font-size: 25px;
     font-style: italic;
     font-family: ROBOTO;
+    line-height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    width: 100px;
+    margin: 0 auto 15px;
   }
 
   .catBanner .bannerText div:last-child{
