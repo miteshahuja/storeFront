@@ -41,6 +41,16 @@
   width: 20%;
 }
 
+.cartPopBox button {
+  background-color: #fff;
+  color: #000;
+  border:1px solid #000;
+  font-size: 16px;
+  padding: 16px 32px;
+  opacity:1;
+  cursor:pointer;
+}
+
 .App-Cart button {
   background: none;
   box-shadow: none;
