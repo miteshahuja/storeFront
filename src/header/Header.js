@@ -113,7 +113,7 @@ class Header extends Component {
                             <ul>
                             {cartPopItemList}
                             </ul>
-                            <button><Link to="/cart">View Cart</Link></button>
+                            <button disabled={items.length > 0?false:true}><Link to="/cart">View Cart</Link></button>
                         </div>
                     </Popover>
                 </div>

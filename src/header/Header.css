@@ -51,6 +51,19 @@
   cursor:pointer;
 }
 
+.cartPopBox button:disabled {
+  opacity: 0.6;
+    background: #eaeaea;
+}
+.cartPopBox button a{
+  text-decoration:none;
+  color:#000;
+}
+
+.cartPopBox span {
+  cursor: pointer;
+}
+
 .App-Cart button {
   background: none;
   box-shadow: none;
