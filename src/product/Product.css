@@ -1,0 +1,94 @@
+.Product {
+  width:100%;
+ height:100%;
+}
+
+.imageBox {
+  width: 60%;
+  float: left;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.imageBox img {
+  width: auto;
+  height: 400px;
+}
+
+.detailsBox {
+  width:30%;
+  text-align: center;
+  float:left;
+}
+
+.productTitleBar {
+  font-size: 18px;
+    text-transform: uppercase;
+    margin: 42px 0px;
+}
+
+.productTitleBar span {
+  color: darkgrey;
+}
+
+.detailsWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: inline-flex;
+}
+.detailBrand {
+  color: #999;
+    font-size: 14px;
+}
+
+.detailTitle {
+  font-size: 40px;
+  margin: 40px 10px;
+  font-family: Times New Roman;
+}
+
+.detailPrice {
+  margin: 10px;
+    font-size: 18px;
+    color: #999;
+    font-family: cursive;
+}
+
+.detailPrice:before {
+  content: '$'
+}
+
+.detailDesc {
+  padding: 10px 0 20px;
+  margin: 10px 0px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #aaa;
+  border-bottom: 1px solid #e6e6e6
+}
+
+.detailBtnBox {
+  width: 300px;
+  margin: 10px auto;
+
+}
+
+.detailBtnBox input {
+  width: 30%;
+  margin: 5px;
+  height: 60px;
+  font-size: 25px;
+  float: left;
+  text-align: center;
+  background: #ececec;
+  color: #6b6b6b;
+}
+
+.detailBtnBox button {
+  height: 65px;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  width: 60%;
+  margin: 5px;
+}

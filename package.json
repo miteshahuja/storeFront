@@ -1,0 +1,28 @@
+{
+  "name": "storefront",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "enzyme": "^3.9.0",
+    "react": "next",
+    "react-dom": "next",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
+    "react-redux": "^7.0.3",
+    "react-test-renderer": "^16.8.6",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6"
+  }
+}

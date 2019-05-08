@@ -1,0 +1,80 @@
+.App-header {
+  background-color: #fff;
+    height: 60px;
+    padding: 20px;
+    color: #000;
+    box-shadow: 1px 4px 3px #f0f0f0;
+    display: flex;
+    flex-flow: row;
+}
+
+.App-header .Header {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 40px;
+}
+.App-MenuBar ul {
+  list-style: none;
+  direction: rtl;
+}
+
+.App-MenuBar {
+  width: 60%;
+    float: left;
+}
+.App-MenuBar ul li{
+  display:inline;
+  margin: 5px;
+}
+
+.App-MenuBar li a {
+  text-decoration: none;
+  color: #000;
+}
+.App-MenuBar li a:hover {
+  color:#e6e6e6
+}
+
+
+.App-Logo {
+  float: left;
+  width: 20%;
+}
+
+.App-Cart button {
+  background: none;
+  box-shadow: none;
+}
+
+.App-Cart button:disabled {
+  background: none;
+}
+.cartPopBox {
+  width: 325px;
+  height: auto;
+  min-height: 160px;
+  margin: 10px;
+}
+
+.cartPopBox ul {
+  list-style: none;
+    float: left;
+    width: 100%;
+}
+
+.cartPopBox ul li {
+  width: 90%;
+  height: 60px;
+  margin: 12px 0px;
+  font-size: 13px;
+}
+
+.cartPopBox ul li img {
+  height: 100%;
+  float:left;
+}
+
+.cartPopBox ul li .cartPopWrap {
+  width: 60%;
+  float: left;
+}

@@ -1,0 +1,119 @@
+.Category {
+ width:100%;
+ height:100%;
+ }
+
+ .catBanner {
+  width: 100%;
+  height: 250px;
+  background: cornsilk;
+  position: relative;
+  background-image: url('/media/plates-header.jpg');
+  background-position: center;
+  background-size: cover;
+ }
+
+ .catBanner>div {
+  width: 40%;
+  margin: 0 auto;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  display: table;
+}
+
+
+ .catBanner> div > div {
+  color: #fff;
+  }
+  
+  .bannerText {
+    display:table-cell;
+    vertical-align: middle;
+  }
+
+  .catBanner .bannerText div:first-child{
+    font-size: 25px;
+    font-style: italic;
+    font-family: ROBOTO;
+  }
+
+  .catBanner .bannerText div:last-child{
+    font-size:20px;
+    font-family: ROBOTO;
+  }
+
+ .catList {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  height:auto;
+  flex-flow: row wrap;
+ }
+
+ .productBox {
+  width: 25%;
+  height: 250px;
+  margin: 20px;
+  flex: 1 25%;
+  text-align:center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position:relative;
+ }
+
+
+ .productBox img {
+   width:100%;
+   margin:0 auto;
+  height:180px;
+ }
+
+ .hoverBox {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hoverBox button {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  opacity:1;
+  cursor:pointer;
+}
+
+ .productBox:hover *:not(.hoverBox) {
+  opacity: 0.3;
+}
+
+.productBox:hover .hoverBox, .productBox:hover .hoverBox button {
+  opacity: 1;
+}
+
+ .productBox .prodBrand {
+   font-size: 12px;
+   color: darkgrey;
+ }
+
+ .productBox .prodTitle {
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.productBox .prodPrice {
+  font-size: 12px;
+  color: darkgrey;
+}
+
+.prodPrice:before { content: "$"; }
