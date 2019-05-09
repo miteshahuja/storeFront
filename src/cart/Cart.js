@@ -36,8 +36,8 @@ class Cart extends Component {
 
     render() {
         const {itemsInCart} = this.state;
-        const { classes } = this.props;
-        const shoppingList = itemsInCart.map((productItem, idx) => {
+        const { classes, items } = this.props;
+        const shoppingList = items.map((productItem, idx) => {
             
             return (<li className={classes.productBox} key={idx+productItem.itemDetails.title}>
 
@@ -46,7 +46,7 @@ class Cart extends Component {
                         <div className="brand">{productItem.itemDetails.brand}</div>
                         <div className="title"> {productItem.itemDetails.title}</div>
                         <div className="price">{productItem.itemDetails.price}</div>
-                        <DeleteIcon className="icons" onClick={this.deleteFromCart.bind(this, productItem)}/>
+                        <DeleteIcon className="icons" onClick={this.deleteFromCart.bind(this, productItem.itemDetails)}/>
                     </div>
                 </li>)});
         return (

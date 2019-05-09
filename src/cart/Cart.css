@@ -9,7 +9,7 @@
 
 .shoppingList ul li{
   width: 70%;
-  margin:0 auto;
+  margin:5px auto;
   height: 125px;
   border-bottom: 1px solid #ebebeb;
 }
@@ -18,13 +18,11 @@
   width: 150px;
     height: auto;
     float: left;
-    margin: 5px;
 }
 
 .shoppingList .cartWrap {
   width: 60%;
     float: left;
-    height: 100%;
     margin: 38px 0px;
 }
 
